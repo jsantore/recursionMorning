@@ -4,7 +4,17 @@ def factorial(n):
         return 1
     return n*factorial(n-1)
 
-#print(factorial(5))
+def loop_factorial(n):
+    answer = 1
+    while n >0:
+        answer = answer*n
+        n=n-1
+    return answer
+
+print(loop_factorial(4))
+
+
+print(factorial(159))
 
 def is_palendrome(string):
     if string =='':
